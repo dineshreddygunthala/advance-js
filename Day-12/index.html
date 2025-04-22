@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Dog Fetcher</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen p-6">
+
+  <h1 class="text-6xl font-bold mb-4">🐶 Random Dog Fetcher</h1>
+
+  <div class="w-80 h-80 mb-4 rounded-xl shadow-md overflow-hidden">
+    <img id="main-image" 
+        src="https://images.dog.ceo/breeds/spitz-indian/Indian_Spitz.jpg" 
+        alt="Random Dog" 
+        class="w-full h-full object-cover" />
+  </div>
+
+  <button id="fetch-btn" class="bg-green-500 hover:bg-green-600 text-white text-2xl px-6 py-2 rounded-lg mb-6">
+    Fetch Random Dog!
+  </button>
+
+  <div id="history" class="flex gap-4 flex-wrap justify-center"></div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
